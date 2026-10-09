@@ -31,7 +31,7 @@ footer { margin-top: 24px; }
 <main>
 <div class="brand">2SETS · MAKE THEM COUNT.</div>
 <h1>Privacy Policy</h1>
-<p>Effective October 1, 2026</p>
+<p>Effective October 9, 2026</p>
 <article>
 <p>
 Fabulous App Developer provides the 2Sets iPhone app.
@@ -46,15 +46,19 @@ Workout preferences, schedules, weights, repetitions, notes,
 workout history, rest settings, and optional progress photos
 are stored locally on your device. These records are not
 uploaded to a 2Sets server or provided by us to advertising
-or purchase providers. This release has no 2Sets login,
-workout cloud synchronization, or online community.
+or purchase providers. Optional account profiles are handled separately as described below.
+This release has no workout cloud synchronization or online community.
 Device backups are governed by your Apple settings.
 </p>
 
+<h2>Optional Sign in with Apple and profile</h2>
+<p>You can use workout features without creating a 2Sets account. If you choose Sign in with Apple in Profile, Apple supplies an account identifier and, when you authorize it, your name and email address or private relay address. We do not receive your Apple password. Supabase provides authentication and stores your account, display name, username and optional profile thumbnail. Profile photos are separate from locally stored workout selfies. Account and profile information is used for authentication and profile functionality, not advertising, and is not publicly displayed in a community in this release. Session credentials are stored in the device keychain. Requests to the account service include technical connection information such as an IP address.</p>
+<p>You can edit your profile, sign out, or select Delete Account in Profile. Account deletion removes the account, profile and uploaded profile photo and revokes its Apple sign-in authorization. It does not cancel an Apple subscription or delete your separately stored local workouts or Apple Health records. Local data can be removed separately in Profile. Contact us if you need help deleting your account. Service backups and operational logs may persist according to the providers' retention processes. See the <a href="https://supabase.com/privacy">Supabase Privacy Policy</a>.</p>
+
 <h2>Optional Apple Health connection</h2>
-<p>2Sets requests your permission only to write completed strength workouts to Apple Health, including their start and end times and duration. We do not read your Health records. Workout weights, repetitions, notes and progress photos are not exported to Health. We do not generate calorie or heart-rate estimates.</p>
+<p>On iPhone, 2Sets requests permission to write completed strength workouts to Apple Health, including their start and end times and duration. The iPhone integration does not read historical Health records. With your permission, the Apple Watch companion reads live heart-rate samples during your active workout, transfers them to the paired iPhone, and stores available samples locally with the workout. Cedar can speak a recent available reading once per circuit. Heart-rate readings are not sent to Supabase, advertising, billing or analytics services. They are general fitness information, not medical monitoring. Workout weights, repetitions, notes and progress photos are not exported to Health. We do not generate calorie or heart-rate estimates.</p>
 <p>Automatic saving is off by default. Connect Apple Health in Profile and choose whether newly completed workouts save automatically, or save an individual workout from its recap after checking the duration. Existing history is never exported automatically. Workout data is not provided to our advertising, billing or analytics services and is not sold.</p>
-<p>You can turn automatic saving off in Profile or revoke workout write permission for 2Sets in Apple Health. Deleting local 2Sets data or uninstalling the app does not delete workouts already exported to Health. Delete those records in Apple Health. Apple manages Health storage and any Health syncing you enable. Other apps may read saved workouts only if they support Apple Health and you grant them the relevant permissions. This feature does not directly connect to other devices or provide Apple Watch controls.</p>
+<p>You can turn automatic saving off in Profile or revoke workout write permission for 2Sets in Apple Health. Deleting local 2Sets data or uninstalling the app does not delete workouts already exported to Health. Delete those records in Apple Health. Apple manages Health storage and any Health syncing you enable. Other apps may read saved workouts only if they support Apple Health and you grant them the relevant permissions. The companion Apple Watch app provides workout controls and live heart-rate readings when a paired iPhone is reachable. It does not separately save a duplicate Watch workout to Health. There is no direct Garmin or Fitbit integration.</p>
 
 <h2>Purchases and subscriptions</h2>
 <p>
@@ -118,7 +122,7 @@ iOS tracking permissions in your device Settings.
 <h2>Camera, notifications, and audio</h2>
 <p>
 Camera access is optional and used when you choose to take
-a progress selfie. You may decline camera access and still
+a progress selfie or profile photo. Choosing a profile thumbnail uploads that selected photo to the private account storage described above. Workout selfies remain local unless you choose to share them. You may decline camera access and still
 track workouts. Optional local notifications alert you
 when rest ends. Spoken workout cues do not require microphone
 access, and 2Sets does not record your voice.
@@ -201,3 +205,4 @@ fabulousappdeveloper@gmail.com
 </main>
 </body>
 </html>
+
